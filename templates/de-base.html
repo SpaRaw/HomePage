@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="style/style.css") }}" type="text/css">
+</head>
+<body>
+    <div id="page">
+        <header id="header">
+            <div id="top-banner">
+                <div id="top-logo"> Logo </div>
+                <div id="top-title">{% block top_title %} {% endblock %}</div>
+            </div>
+            <nav id="nav">
+                 {% block home %} {% endblock %}
+                <a href="../Einkehr/de"><button>Einkehr</button></a>
+                <a href="../Produkte/de"><button>Produkte</button></a>
+                <a href="../Speißekarte/de"><button>Speiße Karte</button></a>
+            </nav>
+        </header>
+        <div id="content"> {% block main_content %} {% endblock %} </div>
+        <footer id="footer">
+            <div id="footer_left">
+                <div id="kontakt-link">
+                    <div>Falls sie Kontakt mit uns Aufnehmen möchten</div>
+                    <div><a href="../Kontakt/de"><button>Hier finden sie weiter</button></a></div>
+                </div>
+                <div id="qa-link">
+                    <div>Hier finden sie Antworten auf häufig gestellte Fragen</div>
+                    <div><a href="../QA/de"><button>Q & A </button></a></div>
+                </div>
+            </div>
+            <div id="footer_center">
+                Besuchen sie uns auf unseren Social Media Accouts:
+                <a href="https://www.facebook.com/alpeschrattenwang"> <button> Facebook</button></a>
+                <a href="https://www.instagram.com/schrattenwang"> <button> Instagram</button></a>
+            </div>
+            <div id="footer_right">
+                <div id="impressum">
+                    <a href="../Impressum/de"><button>Hier gehts zum Impressum</button></a>
+                </div>
+                <div id="datenschutz">
+                    <a href="../Datenschutz/de"><button>Hier gehts zum Datenschutz</button></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

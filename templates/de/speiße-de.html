@@ -1,0 +1,24 @@
+{% extends "de-base.html" %}
+{% block title %} Homepage Alpe Schrattenwang {% endblock %}
+{% block top_title %} <h1>Speiße auf der Alp</h1> {% endblock %}
+{% block home %} <a href="/"><button>Home</button></a>{% endblock %}
+{% block main_content %}
+    <div id="kontent_block_eins">
+        <h3>Klein aber Fein</h3>
+    </div>
+
+    <div id ="kontent_block_zwei">
+        <h3>Alles auf einem Blick</h3>
+        <p>Falls sie es lieber <a href="{{ url_for('static', filename='/pdf/placeholder.pdf') }}"class="plain_link">Herunterladen möchten</a></p>
+        <img href="{{ url_for('static', filename='/img/placeHolder.png') }}">
+    </div>
+
+    <div id="kontent_block_drei">
+              <img href="{{ url_for('static', filename='/img/placeHolder.png') }}">
+    </div>
+
+    <div id="kontent_block_vier">
+        <img href="{{ url_for('static', filename='/img/placeHolder.png') }}">
+
+    </div>
+{% endblock %}
