@@ -1,3 +1,125 @@
+:root{
+    --headerColor: brown;
+
+}
+
 *{
-    background-color: #e78a9f;
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+}
+
+h1{
+    font-size: xxx-large;
+}
+
+h3{
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 15px;
+}
+#page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#header{
+    background-color: var(--headerColor);
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+#top-logo{
+    padding-top: 1em;
+    postion: relative;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#testImg{
+    max-width: 5em;
+    max-height: 5em;
+}
+
+#top-title{
+    margin-top: 1em;
+    text-align: center;
+    position: relative;
+    height: 20%;
+}
+
+#nav{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    height: 20%;
+}
+
+.NavButton{
+
+}
+
+button{
+    position: relative;
+    height: 100%;
+    padding: 15px;
+}
+
+.content{
+    padding-top: 5px;
+    padding-bottom: 50px;
+    padding-inline: 15px;
+    margin-top: 50px;
+    border-bottom: 1px solid #dddddd;
+}
+
+#footer{
+    position: relative;
+    witdh: 100%;
+    background-color: brown;
+}
+
+#footer_left{
+    display: inline-flex;
+    justify-content: center;
+    padding-inline: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+
+#kontakt-link {
+    justify-content: center;
+}
+#qa-link{
+}
+
+
+#footer_center{
+    padding-inline: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+#footer_right{
+    display: inline-flex;
+    justify-content: center;
+    padding-inline: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#impressum{
+
+}
+
+#datenschutz{
+
+}
+.footer{
+    background-color: lightcoral;
 }

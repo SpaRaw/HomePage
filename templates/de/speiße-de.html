@@ -3,21 +3,21 @@
 {% block top_title %} <h1>Speiße auf der Alp</h1> {% endblock %}
 {% block home %} <a href="/"><button>Home</button></a>{% endblock %}
 {% block main_content %}
-    <div id="kontent_block_eins">
+    <div id="kontent_block_eins" class="content">
         <h3>Klein aber Fein</h3>
     </div>
 
-    <div id ="kontent_block_zwei">
+    <div id ="kontent_block_zwei" class="content">
         <h3>Alles auf einem Blick</h3>
         <p>Falls sie es lieber <a href="{{ url_for('static', filename='/pdf/placeholder.pdf') }}"class="plain_link">Herunterladen möchten</a></p>
         <img href="{{ url_for('static', filename='/img/placeHolder.png') }}">
     </div>
 
-    <div id="kontent_block_drei">
+    <div id="kontent_block_drei" class="content">
               <img href="{{ url_for('static', filename='/img/placeHolder.png') }}">
     </div>
 
-    <div id="kontent_block_vier">
+    <div id="kontent_block_vier" class="content">
         <img href="{{ url_for('static', filename='/img/placeHolder.png') }}">
 
     </div>
